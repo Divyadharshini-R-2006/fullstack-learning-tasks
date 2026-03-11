@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <li>getElementById</li>
+    <li>getElementsByClassName</li>
+    <li>getElementByTagName</li>
+    <li>querySelector</li>
+    <li>querySelectorAll</li>
+    <script>
+       const list=document.getElementsByTagName("li");
+       for(let i=0;i<list.length;i++){
+        list[2].textContent="I am the chosen one";
+        list[2].style.fontSize="20px";
+       }
+    </script>
+</body>
+</html>

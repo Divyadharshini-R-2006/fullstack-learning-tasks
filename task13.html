@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span id="span"></span>
+        <span id="span"></span>
+        <span id="span"></span>
+        <span id="span"></span>
+    </div>
+    <script>
+        const id=document.querySelectorAll("#span");
+        for(let i=0;i<id.length;i++){
+            id[i].textContent="Hello";
+            id[i].style.border="2px solid green";
+        }
+    </script>
+</body>
+</html>
