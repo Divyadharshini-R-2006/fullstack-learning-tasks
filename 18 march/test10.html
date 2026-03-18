@@ -1,0 +1,25 @@
+Coding:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="MainHeader"></div>
+    <script>
+        const id=document.getElementById("mainheader");
+        id.textContent="hello";
+        console.log(id);
+    </script>
+</body>
+</html>
+
+Output:
+Cannot set properties of null.
+
+Challenge:
+*) Thus the program executes the result as null.
+*) Because we are accessing the id name as lowercase but declaration is poscal case.
+*) So it throws the result as null.

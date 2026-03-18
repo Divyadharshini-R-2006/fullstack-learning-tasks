@@ -1,0 +1,32 @@
+Coding:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+       const boxes=document.getElementsByClassName("box");
+       console.log(boxes.length);
+    //    boxes[0].className="container";
+       const box=document.querySelector(".box");
+       box.className="container";
+       console.log(boxes.length);
+       </script>
+</body>
+</html>
+
+Output:
+4
+3
+
+Challenge:
+*) The first statement returns the length of a class is:4.
+*) In second statement returns the length as 3, classname is renamed from box to container.
+*) getelementbyclassname is a live html collection, that means if you updated the any value it also updated.

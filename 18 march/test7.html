@@ -1,0 +1,36 @@
+Coding:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton"></button>
+    <p id="countDisplay"></p>
+    <script>
+        const btn=document.getElementById("myButton");
+        btn.textContent="Click here";
+        let count=0;
+        const add=btn.addEventListener("click",function(){
+            console.log("Button clicked "+(count++) + " times");
+        });
+    </script>
+</body>
+</html>
+
+output:
+Button clicked 0 times
+Button clicked 1 times
+Button clicked 2 times
+Button clicked 3 times
+Button clicked 4 times
+Button clicked 5 times
+*) This program excutes the result than return the number of times click the button.
+*) I am using addeventlistener to add a function for button.
+*) And I declare a variable outside of the function to execute 0 each time when the button was clicked at first and loop again the function.
+
+Challenge:
+7 Button clicked 0 times
+*) When I declare the variable count on inside of the function, it doesn't increase number of times the button was clicked.
