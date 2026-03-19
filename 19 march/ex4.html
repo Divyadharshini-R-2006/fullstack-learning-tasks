@@ -1,0 +1,21 @@
+<!-- Create a <span>, set its text to "New!", and insert it into a <div> right before an existing <p> tag. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <p id="para">Welcome to Javascript</p>
+    </div>
+   <script>
+    const para=document.getElementById("para");
+    const div=document.getElementById("div");
+    const span=document.createElement("span");
+    span.textContent="New!";
+    div.insertBefore(span,para);
+   </script> 
+</body>
+</html>

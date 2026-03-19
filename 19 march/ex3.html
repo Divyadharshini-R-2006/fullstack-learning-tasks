@@ -1,0 +1,27 @@
+<!-- Add a button that removes the last child element of a container <div> when clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="btn"></button><br><br>
+   <div id="div">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li id="last">heading</li>
+   </div>
+   <script>
+    const div=document.getElementById("div");
+    const last=document.getElementById("last");
+    const btn=document.getElementById("btn");
+    btn.textContent="Click here";
+    btn.addEventListener("click",function(){
+        div.removeChild(last);
+    })
+   </script> 
+</body>
+</html>

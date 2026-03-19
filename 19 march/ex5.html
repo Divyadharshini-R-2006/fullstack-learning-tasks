@@ -1,0 +1,36 @@
+<!-- Use removeChild() to remove a specific list item, then store it in a variable and append() it to a different list. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Button id="btn">Click here!</Button>
+    <h3>Fast food</h3>
+    <ol id="parent">
+        <li>Pizza</li>
+        <li>Burgur</li>
+        <li>Shawarma</li>
+        <li id="cake">Honey cake</li>
+        <li>Sandwich</li>
+    </ol>
+    <h3>Cake items</h3>
+    <ol id="parent2">
+        <li>Black forest</li>
+        <li>White forest</li>
+        <li>Red welvet</li>
+    </ol>
+    <script>
+        const btn=document.getElementById("btn");
+        const parent=document.getElementById("parent");
+        const parent2=document.getElementById("parent2");
+        const cake=document.getElementById("cake");
+        btn.addEventListener("click",function(){
+           const remove=parent.removeChild(cake);
+           parent2.appendChild(remove);
+        })
+    </script>
+</body>
+</html>

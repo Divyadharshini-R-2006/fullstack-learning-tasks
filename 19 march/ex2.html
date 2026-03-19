@@ -1,0 +1,26 @@
+<!-- ul>, create an <li> with text "Urgent Task" and use insertBefore to place it as the first item -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create and remove elements</h1>
+    <ul id="parent">
+        <li id="first">append</li>
+        <li>appendchild</li>
+        <li>remove</li>
+        <li>removechild</li>
+    </ul>
+    <script>
+        const parent=document.getElementById("parent");
+        const first=document.getElementById("first");
+        const li=document.createElement("li");
+        li.textContent="Urgent Task";
+        parent.insertBefore(li,first);
+
+    </script>
+</body>
+</html>
