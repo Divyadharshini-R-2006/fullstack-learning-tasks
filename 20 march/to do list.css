@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Animated Gradient Background */
+    background:pink;
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} */
+
+.container {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+} */
+
+h2 {
+    text-align: center;
+    color:deeppink;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #764ba2;
+}
+
+button {
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn {
+    background:deeppink;
+    color: white;
+}
+
+/* #addBtn:hover {
+    background: #5a3d8b;
+    transform: scale(1.05);
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    animation: slideIn 0.4s ease;
+    transition: 0.3s; 
+} 
+
+/* @keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+} */
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.complete-btn {
+    border:1px solid black;
+    margin-right: 8px;
+    border-radius: 6px;
+}
+
+.marked{
+    background: #28a745;
+    color: white;
+    height:25px;
+    width:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.delete-btn {
+    background:red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height:25px;
+    width:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* .complete-btn:hover,
+.delete-btn:hover {
+    transform: scale(1.1);
+} */
+
+/* Completed Style */
+.marked-text {
+    text-decoration: line-through;
+    color:#888;
+}
+
+.task{
+    color:black;
+}
+/* Delete Animation */
+/* .fade-out {
+    animation: fadeOut 0.4s forwards;
+} */
+
+/* @keyframes fadeOut {
+    to { opacity: 0; transform: translateX(50px); }
+} */
