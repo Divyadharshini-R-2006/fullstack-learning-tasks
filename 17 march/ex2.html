@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" data-status="inactive">click</button>
+    <script>
+        const btn=document.getElementById("btn");
+        const active=document.getElementById("inactive");
+        btn.addEventListener("click",function(){
+            const status=btn.getAttribute("data-status");
+            if(status==="active"){
+                btn.setAttribute("disabled","true");
+                btn.setAttribute("data-status","inactive");
+            }
+            else{
+                btn.removeAttribute("disabled");
+                btn.setAttribute("data-status","active");
+            }
+        });
+    </script>
+</body>
+</html>
